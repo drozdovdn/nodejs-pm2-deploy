@@ -28,8 +28,7 @@ module.exports = {
         __dirname,
         ".env"
       )} ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_PATH}/current/backend`,
-      "post-deploy":
-        "cd backend && npm ci && npm run build && pm2 startOrRestart ecosystem.config.js --env production",
+      "post-deploy": "ls -la && cd backend && npm -v",
     },
   },
 };
