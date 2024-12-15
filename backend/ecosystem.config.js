@@ -14,6 +14,9 @@ module.exports = {
     {
       name: "mesto-backend",
       script: "./dist/app.js",
+      env: {
+        PATH: "/home/dima/.nvm/versions/node/v22.12.0/bin:" + process.env.PATH,
+      },
     },
   ],
 
