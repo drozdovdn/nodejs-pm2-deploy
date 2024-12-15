@@ -130,6 +130,6 @@ class Api {
   }
 }
 // Замените на адрес вашего бэкенда
-const api = new Api("https://api.drozdovdn.students.nomorepartiesco.ru/");
+const api = new Api("https://api.drozdovdn.students.nomorepartiesco.ru");
 
 export default api;
