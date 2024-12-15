@@ -29,7 +29,7 @@ module.exports = {
         ".env"
       )} ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_PATH}/current/backend`,
       "post-deploy":
-        "cd backend && npm i && npm run build && pm2 startOrRestart ecosystem.config.js --env production",
+        "cd backend && npm ci && npm run build && pm2 startOrRestart ecosystem.config.js --env production",
     },
   },
 };
