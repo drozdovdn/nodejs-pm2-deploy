@@ -26,7 +26,6 @@ module.exports = {
       path: DEPLOY_PATH,
       "pre-deploy-local": `scp -Cr ${path.join(
         __dirname,
-        "backend",
         ".env"
       )} ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_PATH}/current/backend`,
       "post-deploy":
